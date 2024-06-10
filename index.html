@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive_css.css" />
+    <link rel="stylesheet" href="main.js" />
+    <title>Personal Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/4c2b6ab921.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo-no-background.png" alt="Jainab" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT </a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>Hi, I'm <span>JAINAB KHATRI</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG-20210826-WA0087.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              Hello, <br />
+              My name is Jainab khatri. I have recently completed my bachelor's
+              of engineering in computer engineering from government engineering
+              college dahod with 8.37 cgpa till 7th sem.
+              <br />
+              I am skilled with <b> python, core Java, javascript </b> and
+              technologies/Frameworks like <b> django and machine learning </b>.
+              Currently working on llm,deep learning and data structures.<br />
+              Also Actively Looking for a job that would help me to sharpen my
+              skills and drive my carreer into a better direction.<br />
+              Apart from academics I am senior wing cadet of NCC with A1 grade.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages: </span> C/C++, Javascript, Java, Python
+                </li>
+                <li>
+                  <span>Technology/Framework: </span>HTML/CSS, Django, DRF,
+                  Machine Learning
+                </li>
+                <li>
+                  <span>Tools: </span> Visual Studio Code, Chrome, Github,
+                  Linux, Ubuntu, Git, Postman, Pycharm
+                </li>
+                <li><span>Databases: </span> MySQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span style="font-size: large"
+                    >Software Developer Intern at TECHStile</span
+                  ><br />
+                  - Developed a dynamic ERP notification system utilizing
+                  generic functions for various notification needs.<br />
+                  - Developed efficient model query-based data retrieval methods
+                  and message templates for notification generation.<br />
+                  - Worked on various in ERP bugs and resolved it from Backend
+                  side.
+                  <br />
+                  - Optimized number of SQL queries to be fired with silk. Also
+                  worked on the time series database influxdb for iot devices.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span style="font-size: large"
+                    >Summer Intern at TECHStile</span
+                  ><br />
+                  - Worked on POC "Order Planning" given by the company in which
+                  i have worked on algorithms and Django.<br />
+                  - Also wrote research paper on "Dynamic form and printing".
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Machine Learning Intern at IITD-AIA FSM</span><br />
+                  - Made a real time chatbot for FSM website with the help of
+                  corpus.<br />
+                  - Also made researched on Langchain and OpenAI.<br />
+                  - I have used various concepts of Machine learning like NLP,
+                  OpenAI, Chatterbot anf Langchain
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Java Developer at Oasis Infobyte</span><br />
+                  - Worked as an intern for the real world projects based on
+                  java core concepts with swing. <br />
+                  - You can check my work done during the internship on
+                  <a href="https://github.com/jainab02/OIBSIP">Github</a>.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Trainee at SAP</span><br />
+                  - I have completed Training under Techsaksham, CSR initiative
+                  between Microsoft and SAP and implemented by Edunet
+                  Foundation. <br />
+                  - In the training, I got a chance to learn and explore on the
+                  topics like Cloud computing and DBMS with hands on practice.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017-2018</span><br />SSC from Swami Vivekanand English
+                  Medium School <br />
+                  <i>Percentage: 85%</i>
+                </li>
+                <li>
+                  <span>2018-2020</span><br />HSC-Science from Sarvodaya
+                  highschool <br />
+                  <i>Percentage: 75%</i>
+                </li>
+                <li>
+                  <span>2020-2024</span><br />B.E in Computer Engineering <br />
+                  Government Engineering College,Dahod
+                  <br />
+                  <i>CGPA: 8.37 / 10</i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="service-list">
+          <div>
+            <!-- <i class="fa-solid fa-code"></i> -->
+            <i class="fa-brands fa-edge"></i>
+            <h2>Backend Developement</h2>
+            <p>
+              You can Contact me for any query related to Backend Developement.
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfz_FKYAv2EGJTHzBgDLCNv8jbO61dfzsS-Pd03oM1ZVSp8AA/viewform?usp=sf_link"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>ML/AI</h2>
+            <p>
+              Learning the new technologies AI and Diving into the real world
+              applications of AI/ML
+            </p>
+            <!-- <a href="https://github.com/jainab02/WebFinder">See More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Django Developement</h2>
+            <p>You can Ping for Django Related queries and Developement too.</p>
+            <a href="https://github.com/jainab02/Python-for-data-science"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3>ChatBot for FSM Website</h3>
+              <p>
+                The primary objective of this project is to develop a dynamic
+                and interactive conversational interface, acting as a
+                knowledgeable virtual assistant for website visitors.
+              </p>
+              <a href="https://github.com/jainab02/FSM-INT-2023" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Heart Disease Predictor</h3>
+              <p>
+                This is a Heart Disease Predictor made using Machine Learning
+                Concepts.
+              </p>
+              <a
+                href="https://github.com/jainab02/Heart_disease_predictor"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>College Management API</h3>
+              <p>
+                Developed a comprehensive system for managing student, faculty,
+                course, and administrative data.
+              </p>
+              <a
+                href="https://github.com/jainab02/College_Management_System"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Expense Manager</h3>
+              <p>
+                This is a web application which is made for daily use. Preview
+                it on the link below.
+              </p>
+              <a
+                href="https://github.com/jainab02/Expense_manager"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Spam Contact Manager API</h3>
+              <p>
+                Developed a secure and performant REST API for a mobile app to
+                manage user registration, authentication, contact search, and
+                spam reporting..
+              </p>
+              <a
+                href="https://github.com/jainab02/contactSpamApp"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Recipe Manager</h3>
+              <p>
+                • Built a Django-based web application for managing food
+                recipes. Implemented CRUD operations for food items using ORM
+                which includes recipe name, description and its image.
+              </p>
+              <a href="https://github.com/jainab02/RecipeApp" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3>QuickQR</h3>
+              <p>
+                Developed a dynamic QR code generator web application using
+                JavaScript, HTML, and CSS, featuring real-time content updates
+                and extensive customization options. Implemented high-quality QR
+                code generation.
+              </p>
+              <a href="https://github.com/jainab02/QuickQR" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/jainab02?tab=repositories/" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactleft">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> zainabkhatri17@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9327079336</p>
+            <div class="socialicons">
+              <a
+                href="https://www.linkedin.com/in/jainab-khatri-968666212/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://twitter.com/ZainabKhatri3?t=hJpk8up49nuphHFhjA049Q&s=08"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com/zainab_khatri_?igshid=Njc5ZjliZWU="
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1N3x7psON_M9h4pb1UfFc-X6WS7zCmuEZ/view?usp=drive_link"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contactright">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <marquee>Copyright © Jainab</marquee>
+        <!-- Copyright © Jainab -->
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links')
+      var tabcontents = document.getElementsByClassName('tab-contents')
+
+      function opentab(tabname) {
+        // Use a traditional for loop to iterate over the tablinks collection
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove('active-link')
+        }
+
+        // Use a traditional for loop to iterate over the tabcontents collection
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove('active-tab')
+        }
+
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+      }
+
+      // var tablinks = document.getElementsByClassName("tab-links");
+      // var tabcontents = document.getElementsByClassName("tab-contents");
+
+      // function opentab(tabname) {
+      //     for (tablinks of tablinks) {
+      //         tablinks.classList.remove("active-link");
+      //     }
+      //     for (tabcontents of tabcontents) {
+      //         tabcontents.classList.remove("active-tab");
+      //     }
+      //     event.currentTarget.classList.add("active-link");
+      //     event.currentTarget.classList.add("active-tab");
+      //     document.getElementById(tabname).classList.add("active-tab");
+      // }
+    </script>
+    <script>
+      var sidemenu = document.getElementById('sidemenu')
+      function openmenu() {
+        sidemenu.style.right = '0'
+      }
+      function closemenu() {
+        sidemenu.style.right = '-200px'
+      }
+    </script>
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbyaXIXesiuJlf7neBo1RbCsvmwlxZ0_WCAehwqzjgiBe_NRSMI0lqsncOvUcXxRaIob/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = 'Message sent successfully'
+            setTimeout(function () {
+              msg.innerHTML = ''
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
